@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+body {
+  margin: 0;
+  background: #392033;
+}
+#sideBar {
+  height: 100vh;
+  top: 0;
+  right: 0;
+  width: 0vw;
+  position: fixed;
+  z-index: 999;
+  background-color: #fd6051;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+#asideMenu {
+  z-index: 999;
+  top: 0;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  width: 10vw;
+  margin: 5vw;
+}
+#asideHeader {
+  display: block;
+  position: absolute;
+  float: right;
+  width: 100vw;
+  margin: 0;
+  padding: 5vw;
+  left: 0;
+  right: 0;
+  font-size: 6vw;
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+#sideBarContainer {
+  top: 17vw;
+  position: absolute;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+.sideBarOptions {
+  transition: 0.5s;
+  cursor: pointer;
+  background: #ff6e60;
+  width: 100vw;
+  padding: 5vw;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.sideBarOptions:hover {
+  color: #d0d0d0;
+}
+#headerLogo {
+  z-index: 995;
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  left: 5vw;
+  width: 10vw;
+  margin: 5vw;
+}
+.center {
+  z-index: 990;
+  display: block;
+  position: absolute;
+  float: right;
+  margin: 0;
+  padding: 5vw;
+  left: 0;
+  right: 0;
+  font-size: 6vw;
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.subtitle {
+  z-index: 990;
+  display: block;
+  position: absolute;
+  float: right;
+  margin: 0;
+  padding: 12vw 5vw;
+  left: 0;
+  right: 0;
+  font-size: 3vw;
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+#whiteMenu {
+  z-index: 995;
+  right: 5vw;
+  top: 0;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  width: 10vw;
+  margin: 5vw;
+}
+#sunsetBG {
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+#colorBG {
+  width: 100vw;
+  height: 80vh;
+  z-index: 995;
+  top: 20vh;
+  display: inline-block;
+  position: absolute;
+}
+.introduction {
+  z-index: 990;
+  top: 30vh;
+  left: 30vw;
+  right: 30vw;
+  font-size: 5vw;
+  font-family: times;
+  position: absolute;
+  display: inline-block;
+  flex-direction: column;
+  text-align: center;
+}
+.textOrange {
+  color: #fd6051;
+}
+.textWhite {
+  color: #fff;
+}
+#notHead {
+  z-index: 999;
+  margin-bottom: -35vh;
+}
+#about {
+  z-index: 999;
+  background: #392033;
+  padding: 7vw;
+  text-align: center;
+}
+.about__titleAndText {
+  display: block;
+}
+#aboutTitle {
+  background: rgb(254, 192, 81);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 192, 81, 1) 0%,
+    rgba(253, 96, 81, 1) 100%
+  );
+  margin: 2vw auto;
+  padding: 2vw 0vw;
+  border-radius: 10vw;
+  color: #fff;
+  font-size: 8vw;
+  font-family: "Montserrat", sans-serif;
+}
+#aboutText {
+  line-height: 200%;
+  color: #fff;
+  font-size: 6vw;
+  font-family: times;
+}
+#contactButton {
+  background: #fd6051;
+  border-style: none;
+  padding: 3vw 10vw;
+  margin: 5vw 0vw;
+  border-radius: 10vw;
+  color: #fff;
+  font-size: 6vw;
+  font-family: times;
+  cursor: pointer;
+}
+#portfolio {
+  background: #e6e6e6;
+  text-align: center;
+}
+#portfolioTitle {
+  margin: 0;
+  padding: 5vw;
+  color: #392033;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8vw;
+}
+#timeLogo {
+  width: 80vw;
+  cursor: pointer;
+  margin-bottom: 5vw;
+}
+.portfolio__redoak {
+  width: 80vw;
+  cursor: pointer;
+  margin-bottom: 5vw;
+}
+#seeAll {
+  background: #392033;
+  border-style: none;
+  padding: 3vw 10vw;
+  margin-bottom: 5vw;
+  border-radius: 10vw;
+  box-shadow: 1vw 1vw 3vw rgba(57, 32, 51, 0.5);
+  color: #fff;
+  font-size: 6vw;
+  font-family: times;
+  cursor: pointer;
+}
+#contactMe {
+  text-align: center;
+}
+#contactTitle {
+  margin: 0;
+  padding: 4vw;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8vw;
+}
+#formResponse {
+  display: block;
+  margin: 0;
+  text-align: center;
+  color: #fd6051;
+  font-size: 4vw;
+}
+.phpFillFields {
+  color: #fff;
+}
+.inputs:focus {
+  outline-color: #fd6051;
+}
+.inputs::placeholder {
+  font-size: 2vw;
+}
+.honeypot {
+  display: none;
+}
+#inputName {
+  padding: 2vw;
+  margin: 2vw;
+  width: 80vw;
+  border-style: none;
+  height: 5vw;
+  border-radius: 1vw;
+}
+#inputEmail {
+  padding: 2vw;
+  margin: 2vw;
+  width: 80vw;
+  border-style: none;
+  height: 5vw;
+  border-radius: 1vw;
+}
+#inputSubject {
+  padding: 2vw;
+  margin: 2vw;
+  width: 80vw;
+  border-style: none;
+  height: 5vw;
+  border-radius: 1vw;
+}
+#inputMessage {
+  padding: 2vw;
+  margin: 2vw;
+  width: 80vw;
+  border-style: none;
+  height: 20vw;
+  border-radius: 1vw;
+  resize: none;
+}
+#sendButton {
+  background: #fd6051;
+  border-style: none;
+  padding: 3vw 10vw;
+  margin: 5vw 0vw;
+  border-radius: 10vw;
+  color: #fff;
+  font-size: 6vw;
+  font-family: times;
+  cursor: pointer;
+}
+#footTop {
+  margin-top: 7vw;
+  padding: 5vw;
+  background: #fd6051;
+  text-align: center;
+}
+#sendToTop {
+  cursor: pointer;
+  position: absolute;
+  width: 10vw;
+  margin: 0vw 45vw;
+}
+#instagram {
+  width: 10vw;
+}
+#github {
+  width: 10vw;
+}
+#footBottom {
+  background: #dd5447;
+  padding: 4vw;
+  text-align: center;
+  font-size: 4vw;
+}
+.grey {
+  margin: 0;
+  color: #d0d0d0;
+  display: inline-block;
+}
+.white {
+  margin: 0;
+  color: #fff;
+  display: inline-block;
+}
+
+@media only screen and (max-height: 520px) {
+  .introduction {
+    font-size: 4vw;
+  }
+}
+
+/*resizing for larger screens */
+@media only screen and (min-width: 600px) {
+  #sideBar {
+    position: absolute;
+    margin-right: 3vw;
+    width: 80vw;
+    height: 3vw;
+    padding: 3vw;
+    float: right;
+    background-color: transparent;
+    transition: 0;
+  }
+  #asideMenu {
+    display: none;
+  }
+  #asideHeader {
+    display: none;
+  }
+  #sideBarContainer {
+    top: 0;
+    width: 70vw;
+    padding-top: 2vw;
+  }
+  .sideBarOptions {
+    display: block;
+    float: left;
+    background: transparent;
+    width: 12vw;
+    padding: 1vw;
+    transition: 0s;
+  }
+  #headerLogo {
+    width: 4vw;
+    margin: 2vw;
+  }
+  .center {
+    padding: 2vw;
+    left: 10vw;
+    font-size: 3vw;
+    text-align: left;
+  }
+  .subtitle {
+    padding: 5vw 3vw;
+    left: 10vw;
+    font-size: 1.5vw;
+    text-align: left;
+  }
+  #whiteMenu {
+    display: none;
+  }
+  #sunsetBG {
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #colorBG {
+    width: 100vw;
+    height: 80vh;
+    z-index: 995;
+    top: 20vh;
+    display: inline-block;
+    position: absolute;
+  }
+  .introduction {
+    left: 30vw;
+    right: 30vw;
+    font-size: 3vw;
+  }
+  #notHead {
+    margin-bottom: -300px;
+  }
+  #about {
+    padding: 0 5vw 5vw 5vw;
+  }
+  .about__titleAndText {
+    display: flex;
+  }
+  #aboutTitle {
+    width: 20vw;
+    position: absolute;
+    height: 5vh;
+    margin: 6vw 3vw;
+    padding: 30% 0;
+    border-radius: 3vw;
+    font-size: 3vw;
+  }
+  #aboutText {
+    position: relative;
+    left: 25vw;
+    width: 55vw;
+    padding: 10vw 5vw 5vw 5vw;
+    margin-right: 0;
+    display: inline-block;
+    line-height: 200%;
+    font-size: 2.5vw;
+
+    /*
+		position: relative;
+		left: 25vw;
+		line-height: 200%;
+		color: #fff;
+		font-size: 6vw;
+		font-family: times;
+		*/
+  }
+  #contactButton {
+    padding: 1vw 3vw;
+    width: 25vw;
+    margin: 0 20vw 0 45vw;
+    border-radius: 10vw;
+    font-size: 3vw;
+  }
+  #portfolioTitle {
+    margin: 0;
+    width: 20vw;
+    padding: 5vw 40vw;
+    font-size: 3vw;
+  }
+  .portfolio__links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #timeLogo {
+    width: 40vw;
+    height: 25vw;
+    margin-bottom: 5vw;
+  }
+  .portfolio__redoak {
+    width: 40vw;
+    height: 25vw;
+    margin-bottom: 5vw;
+  }
+  #seeAll {
+    padding: 1vw 3vw;
+    margin-bottom: 5vw;
+    border-radius: 5vw;
+    font-size: 3vw;
+  }
+  #contactMe {
+    text-align: center;
+  }
+  #contactTitle {
+    font-size: 3vw;
+  }
+  #formResponse {
+    font-size: 2vw;
+  }
+  #inputName {
+    padding: 1vw;
+    margin: 1vw;
+    width: 65vw;
+    height: 3vw;
+    font-size: 2vw;
+  }
+  #inputEmail {
+    padding: 1vw;
+    margin: 1vw;
+    width: 65vw;
+    height: 3vw;
+    font-size: 2vw;
+  }
+  #inputSubject {
+    padding: 1vw;
+    margin: 1vw;
+    width: 65vw;
+    height: 3vw;
+    font-size: 2vw;
+  }
+  #inputMessage {
+    padding: 1vw;
+    margin: 1vw;
+    width: 65vw;
+    height: 20vw;
+    font-size: 2vw;
+  }
+  #sendButton {
+    padding: 1vw 3vw;
+    width: 35vw;
+    border-radius: 10vw;
+    font-size: 3vw;
+  }
+  #footTop {
+    margin-top: 3vw;
+    padding: 2vw;
+  }
+  #sendToTop {
+    cursor: pointer;
+    position: absolute;
+    width: 5vw;
+    margin: 0vw 47.5vw;
+  }
+  #instagram {
+    width: 5vw;
+    margin-right: 0.5vw;
+  }
+  #github {
+    width: 5vw;
+    margin-left: 0.5vw;
+  }
+  #footBottom {
+    padding: 2vw;
+    text-align: center;
+    font-size: 2vw;
+  }
+}

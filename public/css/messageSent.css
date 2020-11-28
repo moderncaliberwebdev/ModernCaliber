@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+
+body {
+	margin: 0;
+	background: #392033;
+}
+#sideBar {
+	height: 100vh;
+	top: 0;
+	right: 0;
+	width: 0vw;
+  position: fixed;
+  z-index: 999;
+  background-color: #FD6051;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+#asideMenu {
+	z-index: 999;
+	top: 0;
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	width: 10vw;
+	margin: 5vw;
+}
+#asideHeader {
+	display: block;
+	position: absolute;
+	float: right;
+	width: 100vw;
+	margin: 0;
+	padding: 5vw;
+	left: 0;
+	right: 0;
+	font-size: 6vw;
+	color: #fff;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+#sideBarContainer {
+	top: 17vw;
+	position: absolute;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+}
+a {
+	text-decoration: none;
+}
+.sideBarOptions {
+	transition: .5s;
+	cursor: pointer;
+	background: #FF6E60;
+	width: 100vw;
+	padding: 5vw;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+.sideBarOptions:hover {
+	color: #D0D0D0;
+}
+#headerLogo {
+	z-index: 995;
+	display: inline-block;
+	position: absolute;
+	cursor: pointer;
+	left: 5vw;
+	width: 10vw;
+	margin: 5vw;
+}
+.center {
+	z-index: 990;
+	display: block;
+	position: absolute;
+	float: right;
+	margin: 0;
+	padding: 5vw;
+  left: 0;
+  right: 0;
+	font-size: 6vw;
+	color: #fff;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.subtitle {
+	z-index: 990;
+	display: block;
+	position: absolute;
+	float: right;
+	margin: 0;
+	padding: 12vw 5vw;
+	left: 0;
+	right: 0;
+	font-size: 3vw;
+	color: #fff;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+#sentImage {
+  top: 25vh;
+  left: 25vw;
+  position: absolute;
+  width: 50vw;
+}
+#sentText {
+  position: absolute;
+  top: 50vh;
+  width: 80vw;
+  padding: 10vw;
+  color: #fff;
+  text-align: center;
+  font-family: times;
+}
+#sentVector {
+  position: absolute;
+  top: 65vh;
+  width: 95vw;
+  height: 35vh;
+}
+
+
+/*resizing for larger screens */
+@media only screen and (min-width: 600px) {
+	#sideBar {
+		position: absolute;
+		margin-right: 3vw;
+		width: 80vw;
+		height: 3vw;
+		padding: 3vw;
+		float: right;
+	  background-color: transparent;
+	  transition: 0;
+	}
+	#asideMenu {
+		display: none;
+	}
+	#asideHeader {
+		display: none;
+	}
+	#sideBarContainer {
+		top: 0;
+		width: 70vw;
+		padding-top: 2vw;
+	}
+	.sideBarOptions {
+		display: block;
+		float: left;
+		background: transparent;
+		width: 12vw;
+		padding: 1vw;
+		transition: 0s;
+	}
+	#headerLogo {
+		width: 4vw;
+		margin: 2vw;
+	}
+	.center {
+		padding: 2vw;
+	  left: 10vw;
+		font-size: 3vw;
+		text-align: left;
+	}
+	.subtitle {
+		padding: 5vw 3vw;
+	  left: 10vw;
+		font-size: 1.5vw;
+		text-align: left;
+	}
+  #sentImage {
+    top: 20vh;
+    left: 40vw;
+    width: 20vw;
+  }
+  #sentText {
+    position: absolute;
+    top: 45vh;
+    padding: 10vw;
+    color: #fff;
+    text-align: center;
+    font-size: 2vw;
+    font-family: times;
+  }
+  #sentVector {
+    position: absolute;
+    top: 55vh;
+    width: 45vw;
+    height: 45vh;
+  }
+}
