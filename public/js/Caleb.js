@@ -71,6 +71,8 @@ document.getElementById("contactButton").addEventListener("click", function () {
     }, 'slow');
 });
 
+
+
 /*
 //shows all elements in portfolio
 var seeAll = document.getElementById("seeAll");
