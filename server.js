@@ -24,6 +24,7 @@ app.use(express.json())
 
 app.get('/', (req, res) => {
     res.render('index')
+    console.log(req.subdomains)
 })
 
 app.get('/contact', (req, res) => {
