@@ -9,6 +9,8 @@ const PORT = process.env.PORT || 8080
 // Set Handlebars as view engine
 app.set('view engine', 'hbs')
 
+//redirect naked to www domain
+app.use(require('express-naked-redirect')())
 
 //redirect http to https
 app.use(require('express-http-to-https').redirectToHTTPS([/localhost:(\d{4})/], [/\/insecure/], 301));
@@ -22,10 +24,6 @@ app.use(express.json())
 
 app.get('/', (req, res) => {
     res.render('index')
-    if(!req.subdomains.includes('herokuapp')) {
-        //redirect naked to www domain
-        app.use(require('express-naked-redirect')())
-    }
 })
 
 app.get('/contact', (req, res) => {
